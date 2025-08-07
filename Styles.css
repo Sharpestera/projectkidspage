@@ -80,3 +80,15 @@ nav{
     border: 1px solid #0a0650;
 
 }
+.sec1{
+    padding-block: 2rem;
+}
+
+.bannerWrapper{
+    border: 2px solid;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
