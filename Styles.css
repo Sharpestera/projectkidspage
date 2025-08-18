@@ -1,32 +1,76 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Fredoka, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Font 1 */
+@font-face {
+  font-family: Fredoka;
+  src: url('fonts/Fredoka-VariableFont_wdth\,wght.ttf') format('truetype');
+  
+}
+
+/* Font 2 */
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Font 3 */
+@font-face {
+  font-family: 'Arimo';
+  src: url('fonts/Arimo-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font 4 */
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 nav{
-    /* border: 2px solid blue; */
     background-color: #f0f9ff;
     padding-block: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+     font-weight: normal;
+    font-style: normal;
 }
 
 .innerNav{
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
+     font-weight: normal;
+    font-style: normal;
 }
 
-.navRight{
-   
+.navRight {
     width: 850px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+     font-weight: normal;
+    font-style: normal;
+
 }
 
 .genLayout{
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -34,6 +78,8 @@ nav{
     display: flex;
     align-items: center;
     gap: 2rem;
+     font-weight: normal;
+    font-style: normal;
 }
 
 .navItems > a {
@@ -41,54 +87,266 @@ nav{
     text-decoration: none;
     text-transform: capitalize;
     font-size: 13px;
-    font-weight: 700px;
+    font-weight: 400;
+    font-style: normal;
+     
+   
 }
+
 
 .navItems > a:first-child{
-    color: black;
-   
-    
-
+    color: #0a0650;
+    font-style: normal;
+    font-weight: 600;
 }
+.arabic-label {
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    gap: 8px; /* Optional: space between image and text */
+}
+
 
 .navIcons{
-    /* border: 2px solid; */
+
     display: flex;
-    align-items: center;
     gap: 1rem;
+    align-items: center;
 
 }
+
 
 .navIcons > button {
-    background-color: #0a0650;
-    color: white;
-    padding: .3rem 0.5rem;
+    width: 110px;
+    background-color: #180ec7;
+    font-weight: normal;
+    color: #fff;
+    padding: 0.5rem;
     border-radius: 20px;
-    width: 130px;
-    display: flex;
-   padding: 0.1;
-   border: none;
-   justify-content: center;
-    text-transform: capitalize;
+    border: none;
     font-size: 10px;
-    font-weight: 700px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.navIcons > button:nth-child(2) {
+    font-style: normal;
+    font-weight: normal;
+
 }
 
-.navIcons > button:last-child{
+.navIcons > button:last-child {
     background-color: transparent;
     color: #0a0650;
     border: 1px solid #0a0650;
-
+     font-style: normal;
+    font-weight: normal;
 }
-.sec1{
-    padding-block: 2rem;
+
+/* banner styling */
+
+.secOne{
+    padding-top: 4rem;
 }
 
 .bannerWrapper{
-    border: 2px solid;
-    height: 40vh;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.bannerContent{
+    flex: 1;
+}
+
+.bannerContent > h1{
+    color: #0a0650;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.bannerContent > h1 > span{
+    color: #180ec7;
+    font-weight: 500;
+}
+
+.bannerContent > p {
+    margin-block: 1rem;
+}
+
+.trackbtn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    
+}
+
+.btn_btn {
+    background-color: #180ec7;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1.4rem;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.bannerImg {
+    width: 40%;
+}
+
+.bannerImg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* responsive code for navbar and banner */
+@media(min-width: 320px) and (max-width: 500px){
+    .innerNav{
+        width: calc(100% - 40px);
+    }
+
+    .navRight{
+        display: none;
+    }
+
+    .bannerWrapper{
+        margin-top: 15px;
+        width: calc(100% - 40px);
+        flex-direction: column;
+    }
+
+    .bannerImg{
+        width: 100%;
+    }
+
+}
+
+/* about styling */
+.about{
+    padding-block: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+}
+
+.aboutImg{
+    width: 35%;
+    /* height: 30vh; */
+}
+
+.aboutImg > img{
+    width: 100%;
+    height: 100%;
+}
+
+.aboutContent{
+    width: 50%
+}
+
+.titleBadge{
+    background-color: #f2d117;
+    width: 25%;
+    text-align: center;
+    padding: .4rem 0rem;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.aboutContent > h1{
+    
+   color: #0a0650;
+  text-decoration: capitalize;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-block: 1rem;
+}
+
+.aboutContent > p{
+    color: #69747a;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.aboutContent > button{
+    width: 30%;
+    padding-block: 0.6rem;
+}
+/* about responsive code */
+@media(min-width: 320px) and (max-width: 500px){
+
+    .about{
+        flex-direction: column;
+        width: calc(100% - 40px);
+    }
+
+        .aboutContent, .aboutImg{
+            width: 100%;
+        }
+    }
+
+    /* track section */
+    .trackInfo{
+        max-width: 350px;
+        margin: auto;
+    }
+.trackInfo > h2{
+    text-align: center;
+    
+}
+
+select{
+    background-color: #f0f9ff;
+    padding: .2rem .5rem;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 500;
+    color: #180ec7;
+    display: block;
+    width: 145px;
+    margin: 1rem auto;
+}
+
+.trackInfo > h5{
+    margin: auto;
+}
+
+.trackBtns{
+ margin-left: 33px;
+
+}
+   
+
+
+
+
+.trackBtns > button:nth-child(2), .trackBtns > button:nth-child(3){
+    background-color: transparent;
+    color: #180ec7;
+    border: 1px solid;
+}
+
+.trackCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:0; /* space between boxes */
+  width: 100%; /* or set a fixed width like 400px */
+}
+
+/* Make each card a perfect square */
+.card {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* ensures square shape */
+  overflow: hidden; /* hide overflow for images */
+}
+
+/* Style images to cover the entire card area */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures the image covers the box without distortion */
+  display: block; /* remove inline spacing */
 }
