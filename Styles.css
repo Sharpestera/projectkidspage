@@ -3,43 +3,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Fredoka, sans-serif;
-    font-weight: normal;
-    font-style: normal;
 
 }
 
 /* Font 1 */
 @font-face {
-  font-family: Fredoka;
-  src: url('fonts/Fredoka-VariableFont_wdth\,wght.ttf') format('truetype');
-  
-}
+font-family: Fredoka;
+src: url('fonts/Fredoka-VariableFont_wdth\,wght.ttf') format('truetype');
 
-/* Font 2 */
-@font-face {
-  font-family: 'Lora';
-  src: url('fonts/Lora-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+
 }
 
 
-/* Font 3 */
-@font-face {
-  font-family: 'Arimo';
-  src: url('fonts/Arimo-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+body {
+
+     font-family: 'Fredoka', sans-serif;
+     line-height: 1.6;
+
 }
 
-/* Font 4 */
-@font-face {
-  font-family: 'Roboto';
-  src: url('fonts/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+
+ 
+
 
 nav{
     background-color: #f0f9ff;
@@ -129,7 +114,7 @@ nav{
 }
 .navIcons > button:nth-child(2) {
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
 
 }
 
@@ -138,7 +123,7 @@ nav{
     color: #0a0650;
     border: 1px solid #0a0650;
      font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 /* banner styling */
@@ -294,6 +279,8 @@ nav{
     }
 .trackInfo > h2{
     text-align: center;
+    font-size: 20px;
+    font-weight: 500;
     
 }
 
@@ -337,7 +324,7 @@ select{
 }
 
 /* Make each card a perfect square */
-.card {
+.card{
   width: 100%;
   aspect-ratio: 1 / 1; /* ensures square shape */
   overflow: hidden; /* hide overflow for images */
@@ -349,4 +336,590 @@ select{
   height: 100%;
   object-fit: cover; /* ensures the image covers the box without distortion */
   display: block; /* remove inline spacing */
+}
+
+.plans-section {
+    padding: 50px 20px;
+    background-color: #f0f9ff;
+
+    
+}
+.price-title{
+    display: flex;
+   margin-left: 450px;
+    background-color: #f2d117;
+    width: 50px;
+    justify-content: center;
+    text-align: center;
+    padding: .4rem 0rem;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.section-title-sub {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0a0650;
+
+}
+
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem; /*space between boxes*/
+  width: fit-content; /* or set a fixed width like 400px */
+}
+
+    
+    .plan-card {
+    background-color: #f0f9ff;
+    color: #180ec7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+   
+ .plan-card2{
+   
+   background-color: #180ec7;
+    color: #f0f9ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.plan-card2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+.best-offer-title {
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    width: 122%;
+    background-color: #f2d117;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+
+.card-details{
+    position: relative;
+    bottom: 25px;
+    margin: auto;
+
+   
+}
+
+
+
+.plan-title{
+    font-weight: 420;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #0a0650;
+    margin-bottom: 10px;
+
+
+}
+
+.plan-title2{
+    font-weight: 420;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+       
+
+}
+
+
+    .plan-price{
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #0a0650;
+    margin-bottom: 20px;
+    }
+
+    .plan-price2{
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+  
+    margin-bottom: 20px;
+    }
+
+
+    .discount{
+    padding-left: 0.4rem;
+    font-size: 0.6em;
+    text-decoration: line-through;
+}
+
+.benefit-line{
+    display: inline;
+    background-color:rgba(0, 255, 255, 0.2); /* 20% opacity */
+    /* padding-left: 0.4rem;
+    padding-right: 0.4rem; */
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border: none;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.2); /* 20% opacity black, appears faint */
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 0.650rem;
+    cursor: pointer;
+
+    
+
+}
+
+.benefit-line-{
+    background-color: aqua;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border: none;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.2); /* 20% opacity black, appears faint */
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+
+.subscribe-btn {
+   width: 100%;
+    background-color: #180ec7;
+    font-weight: normal;
+    font-size: 800;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.8em;
+    font-weight: 1000;
+     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn2{
+   width: 100%;
+    background-color: #f0f9ff;
+    font-weight: normal;
+    font-size: 800;
+    color: #180ec7;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.8em;
+    font-weight: 1000;
+     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-contact{
+    width: fit-content;
+    background-color: chocolate;
+    font-weight: normal;
+    font-size: 800;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.8em;
+    font-weight: 1000;
+     cursor: pointer;
+    transition: background-color 0.3s;
+}
+.whatsapp-button{
+   position: relative;
+    left: 400px;
+}
+
+
+.location-title{
+  
+        max-width: 400px;
+        margin: auto;
+        margin-top: 40px;
+        color: #0a0650;
+
+}
+
+.location1{
+    margin: auto ;
+    background-color: #f2d117;
+    width: fit-content;
+    text-align: center;
+    padding: .4rem 0.5rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0a0650;
+
+}
+
+
+.nearbytxt{
+     margin: auto;
+     font-weight: normal;
+    
+
+}
+
+.map-container{
+    width: 1000px;
+    height: 350px;
+    margin: auto;
+}
+
+
+.map-container > img{
+width: 108%;
+height: 100%;
+object-fit: cover;
+display: block;
+position: relative;
+right: 37px;
+border-radius: 7%;
+}
+
+
+.address{
+    display: flex;
+    justify-content: space-between;
+}
+.address1 h4, h5{
+    font-weight: 500;
+    color: #0a0650;
+}
+
+.address2 h4, h5{
+    font-weight: 500;
+    color: #0a0650;
+}
+
+/* Target the span icon containing the phone number */
+.address1 h5 span:last-child,
+.address2 h5 span:last-child {
+    margin-left: 30px;
+     padding-left: 10px;
+     padding-right: 10px;
+}
+
+
+/* Make all icons inside address sections tiny */
+.address h5 img {
+    width: 20px;
+    height: auto;  /* maintain aspect ratio */
+}
+
+
+
+/* Add a bottom border to <h4> and spacing below */
+.address1 h4,
+.address2 h4 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px; /* space between text and line */
+    margin-bottom: 10px; /* space after the line */
+}
+
+/* remove default margin from <h5> if needed */
+.address1 h4,
+.address2 h4 {
+    margin-top: 10px; /* space from the line */
+}
+
+
+
+.blogs-container{
+   padding: 50px 20px;
+}
+
+.blogs-head{
+
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.blogs{
+     margin: auto ;
+    background-color: #f2d117;
+    width: fit-content;
+    text-align: center;
+    padding: .3rem 0.5rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0a0650;
+
+}
+
+.icon-heading{
+       font-weight: 500;
+       font-size: larger;
+       color: #0a0650;
+       
+}
+/* Style for the grid container */
+.blogs-grid {
+    
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px; /* space between grid items */
+  width: 100%;
+ 
+}
+
+.grid-item{
+   background-color: #f0f9ff;
+    width: 100%;
+      border-radius: 10px;
+   overflow: hidden; /* hide overflow for images */
+   font-size: 13px;
+   
+}
+
+    
+/* Style images to cover the entire card area */
+.top img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover; /* ensures the image covers the box without distortion */
+  display: block; /* remove inline spacing */
+}
+
+.bottom h4{
+    font-size: 15px;
+    font-weight: 450;
+}
+
+.see-more-btn{ 
+    background-color: #180ec7;
+    border: none;
+    color: #fff;
+    width: 150px;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.see-more-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* frequently asked question */
+.faq-head{
+    margin: auto ;
+    background-color: #f2d117;
+    width: fit-content;
+    text-align: center;
+    padding: .3rem 0.5rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0a0650;
+
+}
+ .asked-questions{
+      text-align: center;
+     color: #0a0650;
+      font-size: 20px;
+    font-weight: 500;
+    }
+    .faq-container {
+      
+      margin: 0 auto;
+    }
+    /* Style each FAQ block with border and gap */
+    .faq {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 15px; /* space between questions */
+      padding: 10px;
+      background-color: #f0f9ff;
+    }
+    /* Style the question with border, padding, and cursor */
+    .question {
+      cursor: pointer;
+      font-weight: bold;
+      padding: 10px;
+      display: flex;
+      color: #0a0650;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 450;
+    }
+    /* Style for answer section */
+    .answer {
+      display: none;
+      margin-top: 10px;
+      line-height: 1.5;
+      color: #0a0650;
+      padding: 0 10px;
+    }
+    .answer.show {
+      display: block;
+    }
+    /* Style SVG arrow */
+    .arrow {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s;
+    }
+    /* Rotate arrow when active */
+    .question.active .arrow {
+      transform: rotate(180deg);
+    }
+
+
+    .contact-section-wrapper{
+    
+        display: flex;
+        justify-content: space-between;
+      
+    }
+
+   /* form styling */
+    .form-wrapper, .message-container{
+        background-color: #f0f9ff;
+  
+   width: 60%;
+    /* margin: 0 auto; */
+   
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    padding: 0%;
+  }
+
+  .input-group:last-child {
+    margin-right: 0;
+    padding: 0%;
+  }
+
+  h4 {
+    margin-bottom: 8px;
+    font-weight: normal;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+
+  /* Remove extra space between textarea and underline */
+  .message-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0%;
+  }
+
+  .message-wrapper h4 {
+    margin-bottom: 8px;
+  }
+
+  textarea {
+    resize: vertical;
+    height: auto;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-family: Arial, sans-serif;
+  }
+
+  /* The line under the textarea */
+  .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+  }
+
+  /* Style the button */
+  .send-btn {
+   background-color: #180ec7;
+    border: none;
+    color: #fff;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+
+  .send-btn:hover {
+    background-color: #0056b3;
+  }
+
+.down-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-down-area > img{
+width: 20px;
+height: 20px;
+
 }
